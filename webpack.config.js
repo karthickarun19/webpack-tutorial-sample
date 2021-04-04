@@ -1,5 +1,5 @@
-const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const path = require('path')
 
 module.exports = {
   entry: {
@@ -13,7 +13,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
       template: path.resolve(__dirname, './src/template.html'), // template file
-      filename: 'index.html', // output file
+      filename: 'index.html',
+      inject : 'body',
     }),
   ]
 }
