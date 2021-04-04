@@ -6,14 +6,13 @@ module.exports = {
     main: path.resolve(__dirname, './src/index.js'),
   },
   output: {
-    path: path.resolve(__dirname, './dist'),
-    filename: '[name].bundle.js',
+    filename: './dist/main.bundle.js',
   },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
       template: path.resolve(__dirname, './src/template.html'), // template file
-      filename: 'index.html',
+      filename: '.dist/index.html',
       inject : 'body',
     }),
   ]
