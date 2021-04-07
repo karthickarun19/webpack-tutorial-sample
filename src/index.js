@@ -1,3 +1,4 @@
+import example from './images/favicon.png'
 class Game {
     name = 'Violin Charades'
   }

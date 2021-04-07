@@ -14,7 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'webpack Boilerplate',
       template: path.resolve(__dirname, './src/template.html'), // template file
-      filename: '.dist/index.html',
+      filename: 'dist/index.html',
       inject : 'body',
     }),
 
@@ -24,7 +24,10 @@ module.exports = {
       test: /\.js$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
-    }
+    },{
+      test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+      type: 'asset/resource',
+    },
     ]
   }
   
