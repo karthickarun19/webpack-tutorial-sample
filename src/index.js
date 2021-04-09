@@ -1,6 +1,6 @@
 import example from './images/favicon.png'
 class Game {
-    name = 'Violin Charades'
+    name = 'Karthick Arun'
   }
   const myGame = new Game()
   // Create paragraph node
