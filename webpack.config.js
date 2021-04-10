@@ -29,6 +29,17 @@ module.exports = {
       type: 'asset/resource',
     },
     ]
+  },
+  module: {
+    rules: [
+      // CSS, PostCSS, and Sass
+      {
+        test: /\.(scss|css)$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+      },
+    ],
   }
+  
+ 
   
 }
